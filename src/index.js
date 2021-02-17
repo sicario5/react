@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom';
 //CSS
 import './index.css';
 
-/*import UniqueCar from './Car'
+import UniqueCar from './Car'
 import {firstcar} from './firstcar'
-import {greeting} from './testing/testing'*/
-import App from './app'
+import {greeting} from './testing/testing'
+/*import App from './app'*/
 
 //JSX rules
 //return single element
@@ -48,8 +48,8 @@ ReactDOM.render(<Greetin/>,document.getElementById('root')
 */
 // nested components,react tools
 
-/* function CarList() {
-  //console.log(greeting);
+function CarList() {
+  console.log(greeting);
   return (
     <section className="cars">
 {firstcar.map((first,index) => { //<Car img={firtscar.img} name={firstcar.img} />
@@ -58,10 +58,7 @@ ReactDOM.render(<Greetin/>,document.getElementById('root')
     </section>
   );
   
-*/
+  }
 
 
-ReactDOM.render(
-<React.StrictMode>
-<App/>
-</React.StrictMode>,document.getElementById('root'));
+ReactDOM.render(<CarList/>, document.getElementById('root'));
